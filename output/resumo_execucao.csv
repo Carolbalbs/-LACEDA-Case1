@@ -1,0 +1,8 @@
+métrica,valor
+total de endereços,100
+ENCONTRADO,76
+AMBIGUO,21
+NAO_ENCONTRADO,3
+taxa de resolução,76.0%
+resolvidos por regra exata,89
+resolvidos por fuzzy,8

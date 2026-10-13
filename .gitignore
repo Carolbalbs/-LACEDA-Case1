@@ -1,0 +1,20 @@
+.venv/
+data/raw/*
+!data/raw/COMO_OBTER_OS_DADOS.md
+data/cache_eda.parquet
+output/*
+!output/resultado_final.csv
+!output/resumo_execucao.csv
+!output/resumo_por_regra.csv
+!output/log_execucao.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# saídas da execução do notebook (ver execucao-NB/README.md)
+execucao-NB/*
+!execucao-NB/README.md
+
+# ferramentas locais de autoria dos notebooks (não fazem parte da entrega)
+tools/build_*.py

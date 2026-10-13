@@ -1,0 +1,21 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-10-12T12:00:00Z" },
+  "lists": "css",
+  "title": "Endereço → Setor Censitário",
+  "cover": "capa",
+  "order": ["capa","contexto","problema","solucao-proposta","achados","solucao","pipeline","cascata","ambiguidade","resultados","saida","limites"],
+  "sections": {
+    "s1": { "description": "O desafio: 100 endereços sujos contra uma base de 9 milhões.", "start": "capa" },
+    "s2": { "description": "O que os dados impõem antes de qualquer linha de código.", "start": "achados" },
+    "s3": { "description": "A solução: normalizar igual, bloquear por município, buscar em cascata.", "start": "solucao" },
+    "s4": { "description": "Resultados, auditoria e limites conhecidos.", "start": "resultados" }
+  },
+  "faces": {
+    "poppins": {
+      "family": "Poppins",
+      "href": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    }
+  },
+  "designSystems": []
+}

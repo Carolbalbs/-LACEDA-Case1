@@ -1,0 +1,41 @@
+<section id="pipeline" data-transition="fade" style="background:#FFFFFF;color:#304258;font-family:'Poppins', Verdana, sans-serif;display:flex;flex-direction:column">
+<p style="position:absolute;left:80px;top:70px;width:120px;font-size:30px;color:#6E7885">07</p>
+<div style="position:absolute;left:1780px;top:80px;width:60px;height:60px;border-radius:30px;background:#AEC9E5"></div>
+<h1 style="position:absolute;left:80px;top:172px;width:1200px;font-size:72px;font-weight:600;color:#304258;letter-spacing:-2px;line-height:1.1">Fluxo de execução</h1>
+<p style="position:absolute;left:80px;top:280px;width:1400px;font-size:24px;color:#6E7885;line-height:1.35">Um comando, ponta a ponta, em menos de um minuto. Sem camada intermediária em disco.</p>
+<div style="position:absolute;left:80px;top:400px;width:1760px;display:flex;align-items:stretch;gap:14px">
+<div style="width:300px;border-radius:8px;background:#F2F3F2;display:flex;flex-direction:column">
+<div style="height:3px;background:#E6813E;border-radius:8px 8px 0px 0px"></div>
+<div style="padding:26px 24px;display:flex;flex-direction:column;gap:8px"><p style="font-size:24px;font-weight:700;color:#304258">Leitura</p><p style="font-size:24px;line-height:1.3;color:#6E7885">CSV de 1,46 GB e a base de busca, tudo como texto</p></div>
+</div>
+<p style="font-size:28px;color:#ACB3BC;align-self:center;width:36px;text-align:center">&rarr;</p>
+<div style="width:300px;border-radius:8px;background:#F2F3F2;display:flex;flex-direction:column">
+<div style="height:3px;background:#E6813E;border-radius:8px 8px 0px 0px"></div>
+<div style="padding:26px 24px;display:flex;flex-direction:column;gap:8px"><p style="font-size:24px;font-weight:700;color:#304258">Normalize</p><p style="font-size:24px;line-height:1.3;color:#6E7885">As mesmas regras nos dois lados</p></div>
+</div>
+<p style="font-size:28px;color:#ACB3BC;align-self:center;width:36px;text-align:center">&rarr;</p>
+<div style="width:300px;border-radius:8px;background:#F2F3F2;display:flex;flex-direction:column">
+<div style="height:3px;background:#E6813E;border-radius:8px 8px 0px 0px"></div>
+<div style="padding:26px 24px;display:flex;flex-direction:column;gap:8px"><p style="font-size:24px;font-weight:700;color:#304258">Blocking</p><p style="font-size:24px;line-height:1.3;color:#6E7885">Recorte dos municípios consultados</p></div>
+</div>
+<p style="font-size:28px;color:#ACB3BC;align-self:center;width:36px;text-align:center">&rarr;</p>
+<div style="width:300px;border-radius:8px;background:#F2F3F2;display:flex;flex-direction:column">
+<div style="height:3px;background:#E6813E;border-radius:8px 8px 0px 0px"></div>
+<div style="padding:26px 24px;display:flex;flex-direction:column;gap:8px"><p style="font-size:24px;font-weight:700;color:#304258">Match</p><p style="font-size:24px;line-height:1.3;color:#6E7885">Cascata de seis níveis sobre o índice</p></div>
+</div>
+<p style="font-size:28px;color:#ACB3BC;align-self:center;width:36px;text-align:center">&rarr;</p>
+<div style="width:300px;border-radius:8px;background:#F2F3F2;display:flex;flex-direction:column">
+<div style="height:3px;background:#E6813E;border-radius:8px 8px 0px 0px"></div>
+<div style="padding:26px 24px;display:flex;flex-direction:column;gap:8px"><p style="font-size:24px;font-weight:700;color:#304258">Escrita</p><p style="font-size:24px;line-height:1.3;color:#6E7885">CSV, Parquet, XLSX e log de execução</p></div>
+</div>
+</div>
+<p style="position:absolute;left:80px;top:720px;width:600px;font-size:24px;color:#ACB3BC;letter-spacing:1px;text-transform:uppercase">Reprodutibilidade</p>
+<div style="position:absolute;left:80px;top:770px;width:1760px;display:flex;gap:24px">
+<div style="width:560px;border-radius:8px;border:2px solid #ACB3BC;padding:22px 24px;display:flex;flex-direction:column;gap:6px"><p style="font-size:24px;font-weight:700;color:#304258">Docker</p><p style="font-size:24px;line-height:1.3;color:#6E7885">Imagem com as dependências fixadas</p></div>
+<div style="width:560px;border-radius:8px;border:2px solid #ACB3BC;padding:22px 24px;display:flex;flex-direction:column;gap:6px"><p style="font-size:24px;font-weight:700;color:#304258">pytest</p><p style="font-size:24px;line-height:1.3;color:#6E7885">Testes de normalização e de cascata</p></div>
+<div style="width:560px;border-radius:8px;border:2px solid #ACB3BC;padding:22px 24px;display:flex;flex-direction:column;gap:6px"><p style="font-size:24px;font-weight:700;color:#304258">log_execucao.json</p><p style="font-size:24px;line-height:1.3;color:#6E7885">Parâmetros, volumetria e contagens da rodada</p></div>
+</div>
+<p style="position:absolute;left:80px;top:950px;width:860px;font-size:24px;color:#6E7885">Ana Carolina Balbino</p>
+<p style="position:absolute;left:1060px;top:950px;width:780px;font-size:24px;color:#6E7885;text-align:right">LACEDA</p>
+<aside>Converter o CSV para Parquet economizaria 9 segundos e custaria 12 de conversão — não se paga, e criaria um cache a manter.</aside>
+</section>

@@ -1,0 +1,22 @@
+<section id="cascata" data-transition="fade" style="background:#FFFFFF;color:#304258;font-family:'Poppins', Verdana, sans-serif;display:flex;flex-direction:column">
+<p style="position:absolute;left:80px;top:70px;width:120px;font-size:30px;color:#6E7885">08</p>
+<div style="position:absolute;left:1780px;top:80px;width:60px;height:60px;border-radius:30px;background:#AEC9E5"></div>
+<h1 style="position:absolute;left:80px;top:172px;width:1300px;font-size:72px;font-weight:600;color:#304258;letter-spacing:-2px;line-height:1.1">A cascata de seis níveis</h1>
+<p style="position:absolute;left:80px;top:280px;width:1500px;font-size:24px;color:#6E7885;line-height:1.35">Do mais específico ao mais tolerante, parando no primeiro acerto.</p>
+<table style="position:absolute;left:80px;top:360px;width:1760px;font-family:'Poppins', Verdana, sans-serif;font-size:26px;color:#6E7885;padding:14px 20px">
+<tr style="background:#F2F3F2"><th style="width:10%;color:#304258;text-align:left">Nível</th><th style="width:62%;color:#304258;text-align:left">Chave de busca</th><th style="width:28%;color:#304258;text-align:left">Confiança</th></tr>
+<tr><td>1</td><td>município + CEP + logradouro + número, exato</td><td>Alta</td></tr>
+<tr><td>2</td><td>município + CEP + logradouro, exato</td><td>Alta</td></tr>
+<tr><td>3</td><td>município + logradouro + número, exato</td><td>Média</td></tr>
+<tr><td>4</td><td>município + CEP, logradouro parecido &ge; 88</td><td>Média</td></tr>
+<tr><td>5</td><td>município + bairro, logradouro parecido &ge; 92</td><td>Baixa</td></tr>
+<tr><td>6</td><td>nada bateu</td><td style="color:#E6813E">Não encontrado</td></tr>
+</table>
+<div style="position:absolute;left:80px;top:790px;width:1760px;display:flex;gap:40px">
+<div style="width:860px;display:flex;flex-direction:column;gap:10px"><p style="font-size:30px;font-weight:600;color:#304258">Por que cascata, e não uma regra só</p><p style="font-size:24px;line-height:1.35;color:#6E7885">O poder do CEP varia: 48030260, em Alagoinhas, cobre 406 endereços num único setor; 46830000, em Andaraí, cobre 8.642 endereços em 38 setores.</p></div>
+<div style="width:860px;display:flex;flex-direction:column;gap:10px"><p style="font-size:30px;font-weight:600;color:#304258">Município é bloco obrigatório</p><p style="font-size:24px;line-height:1.35;color:#6E7885">Nenhuma resposta é dada fora do município informado na consulta, em nenhum dos seis níveis.</p></div>
+</div>
+<p style="position:absolute;left:80px;top:950px;width:860px;font-size:24px;color:#6E7885">Ana Carolina Balbino</p>
+<p style="position:absolute;left:1060px;top:950px;width:780px;font-size:24px;color:#6E7885;text-align:right">LACEDA</p>
+<aside>Os limiares 88 e 92 foram calibrados por inspeção; o efeito de alterá-los está medido no notebook 2.</aside>
+</section>

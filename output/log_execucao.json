@@ -1,0 +1,27 @@
+{
+  "executado_em": "2026-10-13T07:48:38",
+  "base_busca": "SINTÉTICA (base real ausente)",
+  "usando_base_real": false,
+  "municipios_carregados": [
+    "290070",
+    "291720",
+    "292740"
+  ],
+  "enderecos_cnefe_no_recorte": 1490975,
+  "chaves_no_indice": 27194,
+  "limiar_fuzzy_cep": 88,
+  "limiar_fuzzy_bairro": 92,
+  "status": {
+    "ENCONTRADO": 76,
+    "AMBIGUO": 21,
+    "NAO_ENCONTRADO": 3
+  },
+  "regras": {
+    "1_EXATO_CEP_LOGR_NUM": 69,
+    "2_EXATO_CEP_LOGR": 10,
+    "3_EXATO_LOGR_NUM": 10,
+    "4_FUZZY_CEP": 6,
+    "6_NAO_ENCONTRADO": 3,
+    "5_FUZZY_BAIRRO": 2
+  }
+}
